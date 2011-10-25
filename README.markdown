@@ -8,16 +8,17 @@ The theme is pretty simple, but can be further updated without any problem, as i
 The latest release of this theme can be found at https://github.com/jlengrand/pluxml_theme_darkFuture.
 Another way to download it is on http://ressources.pluxml.org/
 
-[Here is what the them should display once installed](http://dl.dropbox.com/u/4286043/00_Website/03_Images/pluxml_theme.png)
+[Here is what the theme should display once installed](http://dl.dropbox.com/u/4286043/00_Website/03_Images/pluxml_theme.png)
 
 
 ## Installation
 
 To use this theme, you will need Pluxml 5.1.2 at least.
 Pluxml is a web software (CMS) that can be used to create a nice website or blog.
+One of its huge advantages is that it does not need any database, as it is only based on xml. 
+
 To quote from its author : 
 "PluXml is a lightweight CMS powered by PHP5 and XML"
-One of its huge advantages is that it does not need any database, as it is only based on xml. 
 
 You can learn more about pluxml on the [website](http://www.pluxml.org), or in [github](https://github.com/benjamin-pierre/pluxml)
 
@@ -27,13 +28,14 @@ Then, select the theme as your default in your [administration menu](http://dl.d
 
 ## Hints 
 
-**Display Images : **
+**Display Images :**
 
 In order to display images, you may have to change links in the info.php file of the theme. 
 This file is designed to regroup all your webs links, whether internal or externals. 
 
 To add a new href in your website, there are two simple steps :
 Add a new line in the info.php file :
+
 `
 define('NEW_WEBSITE', "http://www.lengrandlambert.fr/");
 `
@@ -46,7 +48,7 @@ Then, you simply add in the php files of your theme :
 
 This way, the only file to be changed in your website if a link changes is info.php
 
-** Admin access:**
+**Admin access:**
 
 You can access to your administration menu at http://pluxmlroot/core/admin
 Another way is to click on the **right bottom corner** of the footer in your pages; an hyperlink is hidden there :)
