@@ -34,13 +34,13 @@ This file is designed to regroup all your webs links, whether internal or extern
 
 To add a new href in your website, there are two simple steps :
 Add a new line in the info.php file :
-```Php
+`
 define('NEW_WEBSITE', "http://www.lengrandlambert.fr/");
-````
+`
 Then, you in the php files of your theme : 
-```Php
+`
 <a href="<?php echo NEW_WEBSITE ?>">Here is the link!</a>
-````
+`
 
 This way, the only file to be changed in your website if a link changes is info.php
 
