@@ -37,7 +37,9 @@ Add a new line in the info.php file :
 `
 define('NEW_WEBSITE', "http://www.lengrandlambert.fr/");
 `
-Then, you in the php files of your theme : 
+
+Then, you simply add in the php files of your theme :
+ 
 `
 <a href="<?php echo NEW_WEBSITE ?>">Here is the link!</a>
 `
