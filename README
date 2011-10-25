@@ -1,4 +1,4 @@
-This repository contains a simple dark theme for pluxml. 
+ This repository contains a simple dark theme for pluxml. 
 I created it to my personal website. 
 
 Feel Free to use it if you want, even if it is not finished yet :)
@@ -10,3 +10,15 @@ NOTE: The progTips.html file mentionned in info.php is part of another project, 
 The last version should be retrieved there and uploaded on the FTP separately.
 
 
+
+Script Used to display multilingual posts in the blog :
+
+<a href="javascript:InverseTout( 'mondiv' )"><img src="http://lengrandlambert.fr/themes/airballs_pluxml/img/en_fr.png" alt="fr flag" title="English-Français" ALIGN=RIGHT height="15" width="20" /></a>
+
+
+<div name="mondiv1" id="mondiv1">Bloc 1</div>
+<div name="mondiv2" id="mondiv2">Bloc 2</div>
+
+<script language="Javascript">
+DivStatus( 'mondiv', '2' )
+</script>
