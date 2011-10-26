@@ -6,7 +6,7 @@ I used it previously as main theme for my personal website, and still use it loc
 The theme is pretty simple, but can be further updated without any problem, as it was designed to be generic. 
 
 The latest release of this theme can be found at https://github.com/jlengrand/pluxml_theme_darkFuture.
-Another way to download it is on http://ressources.pluxml.org/
+Another way to download is on [Pluxml website](http://ressources.pluxml.org/?theme126/theme-dark-future)
 
 [Here is what the theme should display once installed](http://dl.dropbox.com/u/4286043/00_Website/03_Images/pluxml_theme.png)
 
