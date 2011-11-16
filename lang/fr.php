@@ -30,11 +30,11 @@ $LANG = array(
 'C_LINKEDIN'            => 'Linkedin', 
 'C_TWITTER'             => 'Twitter',
 'C_G+'                  => 'Google+',
-'C_DARTH'               => 'DarthWound',
-'C_ARP'                 => 'Arpinux',
+'C_DARTH'               => 'PluXml',
+'C_ARP'                 => 'PluXml',
 'C_CRUNCH'              => 'Crunchang-fr',
 'C_DEB'                 => 'Debian.org',
-'C_STACK'               => 'Stack Overflow',
+'C_STACK'               => 'PluXml',
 
 # footer.php
 'POWERED_BY'			=> 'G&eacute;n&eacute;r&eacute; par',
