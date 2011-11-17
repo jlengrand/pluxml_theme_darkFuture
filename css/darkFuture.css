@@ -267,6 +267,13 @@ a.admin {
     margin-left: 30px;
     }
 
+/** xhtml validation*/
+#validation {
+    text-align:left;
+    margin-left: 85px;
+    }
+
+
 /** List of icons  **/
 #icons {
     padding:0;
