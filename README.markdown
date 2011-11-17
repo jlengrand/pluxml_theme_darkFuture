@@ -8,7 +8,7 @@ The theme is pretty simple, but can be further updated without any problem, as i
 The latest release of this theme can be found at https://github.com/jlengrand/pluxml_theme_darkFuture.
 Another way to download is on [Pluxml website](http://ressources.pluxml.org/?theme126/theme-dark-future)
 
-[Here is what the theme should display once installed](http://dl.dropbox.com/u/4286043/00_Website/03_Images/pluxml_theme.png)
+[Here is what the theme should display once installed](http://www.lengrandlambert.fr/pluxml/513/)
 
 
 ## Installation
@@ -53,7 +53,6 @@ This way, the only file to be changed in your website if a link changes is info.
 You can access to your administration menu at http://pluxmlroot/core/admin
 Another way is to click on the **right bottom corner** of the footer in your pages; an hyperlink is hidden there :)
 
-
 ## Copyright
 
 Copyright © 2011 Julien Lengrand-Lambert
@@ -71,4 +70,4 @@ You can contact me at jlengrand at gmail dot com, or in my [current website](htt
 
 NOTE: The progTips.html file mentionned in info.php is part of another project, called progTips.
 The last version should be retrieved there and uploaded on the FTP separately.
-You can find the last version of this file [here](https://github.com/jlengrand/progTips)
+You can find the last version of this file [here](http://www.lengrandlambert.fr/progTips.html)
