@@ -1,43 +1,64 @@
-<?php if(!defined('PLX_ROOT')) exit; ?>
-<?php include('info.php'); ?>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php $plxShow->defaultLang() ?>" lang="<?php $plxShow->defaultLang() ?>">
-
+<?php if (!defined('PLX_ROOT')) exit; ?>
+<!DOCTYPE html>
+<html lang="<?php $plxShow->defaultLang() ?>">
 <head>
+	<meta charset="<?php $plxShow->charset('min'); ?>">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
 	<title><?php $plxShow->pageTitle(); ?></title>
-
-	<meta http-equiv="Content-Type" content="text/html; charset=<?php $plxShow->charset(); ?>" />
-	<?php $plxShow->meta('description') ?>
-	<?php $plxShow->meta('keywords') ?>
-	<?php $plxShow->meta('author') ?>
-
+<?php
+	$plxShow->meta('description');
+	$plxShow->meta('keywords');
+	$plxShow->meta('author');
+?>
 	<link rel="icon" href="<?php $plxShow->template(); ?>/img/favicon.png" />
-	<link rel="stylesheet" type="text/css" href="<?php $plxShow->template(); ?>/css/darkFuture.css" media="screen" />
-	<!--[if IE]>
-		<link rel="stylesheet" type="text/css" href="<?php $plxShow->template(); ?>/css/ie.css" media="screen" />
-	<![endif]-->
-	<?php $plxShow->templateCss() ?>
-
-	<link rel="alternate" type="application/rss+xml" title="<?php $plxShow->lang('ARTICLES_RSS_FEEDS') ?>" href="<?php $plxShow->urlRewrite('feed.php?rss') ?>" />
+	<link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/plucss.css?v=1.3.1" media="screen,print"/>
+	<link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/theme.css?v=<?php echo PLX_VERSION ?>" media="screen"/>
+<?php
+	$plxShow->templateCss();
+	$plxShow->pluginsCss();
+?>
+	<link rel="alternate" type="application/rss+xml" title="<?php $plxShow->lang('ARTICLES_RSS_FEEDS') ?>" href="<?php $plxShow->urlPostsRssFeed($plxShow->plxMotor->mode) ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php $plxShow->lang('COMMENTS_RSS_FEEDS') ?>" href="<?php $plxShow->urlRewrite('feed.php?rss/commentaires') ?>" />
-
 </head>
 
-<body id="top">
+<body id="top" class="page mode-<?php $plxShow->mode(true) ?>">
 
-	<div id="header">
+	<header class="header">
 
-		<h1><?php $plxShow->mainTitle('link'); ?></h1>
-		<p><?php $plxShow->subTitle(); ?></p>
-	
-		<ul id="nav">
-	        <li><a href="<?php echo BLOG ?>" title="<?php $plxShow->lang('C_BLOG') ?>" class="headlink" ><?php $plxShow->lang('C_BLOG') ?></a></li>
-	        <li><a href="<?php echo ME ?>" title="<?php $plxShow->lang('C_ME') ?>" class="headlink" ><?php $plxShow->lang('C_ME') ?></a></li>
-	        <li><a href="<?php echo GALLERY ?>" title="<?php $plxShow->lang('C_GALLERY') ?>" class="headlink" ><?php $plxShow->lang('C_GALLERY') ?></a></li>
-	        <li><a href="<?php echo PRO ?>" title="<?php $plxShow->lang('C_PRO') ?>" class="headlink"><?php $plxShow->lang('C_PRO') ?></a></li>
-            <li><a href="<?php echo GITHUB ?>" title="<?php $plxShow->lang('C_GITHUB') ?>" class="headlink"><?php $plxShow->lang('C_GITHUB') ?></a></li>
-         	<li><a href="<?php echo PROG ?>" title="<?php $plxShow->lang('C_PROG') ?>" class="headlink"><?php $plxShow->lang('C_PROG') ?></a></li>
-		</ul>	
+		<div class="container">
 
-	</div>
+			<div class="grid">
+
+				<div class="col sml-6 med-5 lrg-4">
+
+					<div class="logo">
+						<h1 class="no-margin heading-small"><?php $plxShow->mainTitle('link'); ?></h1>
+						<h2 class="h5 no-margin"><?php $plxShow->subTitle(); ?></h2>
+					</div>
+
+				</div>
+
+				<div class="col sml-6 med-7 lrg-8">
+
+					<nav class="nav">
+
+						<div class="responsive-menu">
+							<label for="menu"></label>
+							<input type="checkbox" id="menu">
+							<ul class="menu">
+								<?php $plxShow->staticList($plxShow->getLang('HOME'),'<li class="#static_class #static_status" id="#static_id"><a href="#static_url" title="#static_name">#static_name</a></li>'); ?>
+								<?php $plxShow->pageBlog('<li class="#page_class #page_status" id="#page_id"><a href="#page_url" title="#page_name">#page_name</a></li>'); ?>
+							</ul>
+						</div>
+
+					</nav>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</header>
+
+	<div class="bg"></div>

@@ -3,10 +3,10 @@
 $LANG = array(
 
 #header.php
+'MENU'					=> 'Menú',
 'HOME'					=> 'Inicio',
 'GOTO_CONTENT'			=> 'Ir al contenido',
 'GOTO_MENU'				=> 'Ir al men&uacute;',
-'COMMENTS_ATOM_FEEDS'	=> 'Hilo Atom de los comentarios',
 'COMMENTS_RSS_FEEDS'	=> 'Hilo Rss de los comentarios',
 'COMMENTS'				=> 'Comentarios',
 'ARTICLES_RSS_FEEDS'	=> 'Hilo Rss de los art&iacute;culos',
@@ -14,8 +14,8 @@ $LANG = array(
 
 # sidebar.php
 'CATEGORIES' 			=> 'Categor&iacute;as',
-'LAST_ARTICLES'			=> 'Ultimos art&iacute;culos',
-'LAST_COMMENTS'			=> 'Ultimos comentarios',
+'LATEST_ARTICLES'		=> 'Ultimos art&iacute;culos',
+'LATEST_COMMENTS'		=> 'Ultimos comentarios',
 'ARCHIVES'				=> 'Archivos',
 
 # footer.php
@@ -46,6 +46,11 @@ $LANG = array(
 'SEND'					=> 'Enviar',
 'COMMENTS_CLOSED'		=> 'Comentarios cerrados',
 'ANTISPAM_WARNING'		=> 'Chequeo anti-spam',
+
+'REPLY'					=> 'Contestación',
+'REPLY_TO'				=> 'Contestación',
+'CANCEL'				=> 'Cancelar',
+
 );
 
 ?>

@@ -6,7 +6,8 @@
 
 			<div class="grid">
 
-				<div class="content col sml-12 med-9">
+				<div class="content col sml-12">
+
 
 					<article class="article" id="post-<?php echo $plxShow->artId(); ?>">
 
@@ -51,8 +52,6 @@
 					<?php include __DIR__.'/commentaires.php'; ?>
 
 				</div>
-
-				<?php include __DIR__.'/sidebar.php'; ?>
 
 			</div>
 
