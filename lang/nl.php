@@ -3,6 +3,7 @@
 $LANG = array(
 
 #header.php
+'MENU'					=> 'Menu',
 'HOME'					=> 'Home',
 'GOTO_CONTENT'			=> 'Ga naar inhoud',
 'GOTO_MENU'				=> 'Ga naar menu',
@@ -13,8 +14,8 @@ $LANG = array(
 
 # sidebar.php
 'CATEGORIES' 			=> 'Categorieën',
-'LAST_ARTICLES'			=> 'Laatste artikels',
-'LAST_COMMENTS'			=> 'Laatste commentaren',
+'LATEST_ARTICLES'		=> 'Laatste artikels',
+'LATEST_COMMENTS'		=> 'Laatste commentaren',
 'ARCHIVES'				=> 'Archief',
 
 # footer.php
@@ -45,6 +46,11 @@ $LANG = array(
 'SEND'					=> 'Verzenden',
 'COMMENTS_CLOSED'		=> 'Commentaren zijn afgesloten',
 'ANTISPAM_WARNING'		=> 'Anti-spam verificatie',
+
+'REPLY'					=> 'Antwoord',
+'REPLY_TO'				=> 'Antwoord',
+'CANCEL'				=> 'Annuleren',
+
 );
 
 ?>

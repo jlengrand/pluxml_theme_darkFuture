@@ -1,17 +1,36 @@
-<?php include(dirname(__FILE__).'/header.php'); ?>
+<?php include __DIR__.'/header.php'; ?>
 
-	<div id="section">
+	<main class="main">
 
-		<div id="article">
+		<div class="container">
 
-				<h2><?php $plxShow->lang('ERROR') ?> :</h2>
-				<div class="error-content"><?php $plxShow->erreurMessage(); ?></div>
+			<div class="grid">
+
+				<div class="content col sml-12 med-8">
+
+					<article class="article">
+
+						<header>
+							<h2>
+								<?php $plxShow->lang('ERROR'); ?>
+							</h2>
+						</header>
+
+						<p>
+							<?php $plxShow->erreurMessage(); ?>
+						</p>
+
+					</article>
+
+				</div>
+
+				<?php include __DIR__.'/sidebar.php'; ?>
+
+			</div>
 
 		</div>
 
-		<?php include(dirname(__FILE__).'/sidebar.php'); ?>
+	</main>
 
-	</div>
-
-<?php include(dirname(__FILE__).'/footer.php'); ?>
+<?php include __DIR__.'/footer.php'; ?>
 

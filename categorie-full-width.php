@@ -1,12 +1,22 @@
 <?php include __DIR__.'/header.php'; ?>
 
-	<main class="main">
+	<main class="main" role="main">
 
 		<div class="container">
 
 			<div class="grid">
 
-				<div class="content col sml-12 med-9">
+				<div class="content col sml-12">
+
+					<ul class="repertory menu breadcrumb">
+						<li><a href="<?php $plxShow->racine() ?>"><?php $plxShow->lang('HOME'); ?></a></li>
+						<li><?php $plxShow->catName(); ?></li>
+					</ul>
+
+					<p><?php $plxShow->catDescription('#cat_description'); ?></p>
+					<p><?php $plxShow->catThumbnail(); ?></p>
+
+					<?php while($plxShow->plxMotor->plxRecord_arts->loop()): ?>
 
 					<article class="article" id="post-<?php echo $plxShow->artId(); ?>">
 
@@ -17,7 +27,7 @@
 								</time>
 							</span>
 							<h2>
-								<?php $plxShow->artTitle(); ?>
+								<?php $plxShow->artTitle('link'); ?>
 							</h2>
 							<div>
 								<small>
@@ -25,7 +35,7 @@
 										<?php $plxShow->lang('WRITTEN_BY'); ?> <?php $plxShow->artAuthor() ?>
 									</span>
 									<span class="art-nb-com">
-										<a href="#comments" title="<?php $plxShow->artNbCom(); ?>"><?php $plxShow->artNbCom(); ?></a>
+										<?php $plxShow->artNbCom(); ?>
 									</span>
 								</small>
 							</div>
@@ -42,17 +52,19 @@
 						</header>
 
 						<?php $plxShow->artThumbnail(); ?>
-						<?php $plxShow->artContent(); ?>
+						<?php $plxShow->artChapo(); ?>
 
 					</article>
 
-					<?php $plxShow->artAuthorInfos('<div class="author-infos">#art_authorinfos</div>'); ?>
+					<?php endwhile; ?>
 
-					<?php include __DIR__.'/commentaires.php'; ?>
+					<nav class="pagination text-center">
+						<?php $plxShow->pagination(); ?>
+					</nav>
+
+					<?php $plxShow->artFeed('rss',$plxShow->catId(), '<span><a href="#feedUrl" title="#feedTitle">#feedName</a></span>'); ?>
 
 				</div>
-
-				<?php include __DIR__.'/sidebar.php'; ?>
 
 			</div>
 
